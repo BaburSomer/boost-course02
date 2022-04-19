@@ -3,6 +3,7 @@ package com.bilgeadam.lesson007;
 import javax.swing.JOptionPane;
 
 public class GraphicalGreeting {
+	
 	public void hello() {
 		JOptionPane.showMessageDialog(null, "Merhaba Java Sınıfı", "Selamlama", JOptionPane.INFORMATION_MESSAGE);
 	}
