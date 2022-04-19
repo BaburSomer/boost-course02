@@ -1,0 +1,1 @@
+All class exercises created during the second course of BilgeAdam's Java Boost program (except exercises in a project nature) 
