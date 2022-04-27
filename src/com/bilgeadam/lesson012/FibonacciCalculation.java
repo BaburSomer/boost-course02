@@ -45,5 +45,4 @@ public class FibonacciCalculation {
 		}
 		return nth;
 	}
-
 }
