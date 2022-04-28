@@ -56,7 +56,7 @@ public class NonPrimitiveTypes {
 		fatma.name = ayse.name;		// new ile yeni kişi oluşturup her öznitelik ayrı ayrı birbvirine atanır
 		fatma.age = ayse.age;
 		fatma.salary = ayse.salary;    // ayşe ile fatmanın içerikleri aynı ama adresleri farklı
-		System.out.println("Ayşe's age: " + fatma.age + " Ayşe's reference (memory adress): " + ayse);
+		System.out.println("Ayşe's age: " + ayse.age + " Ayşe's reference (memory adress): " + ayse);
 		System.out.println("Fatma's age: " + fatma.age + " Fatma's reference (memory adress): " + fatma);
 
 		fatma.age = 44;  // onun için fatmadaki değişiklik ayşeyi etkilemez
