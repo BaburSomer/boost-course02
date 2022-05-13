@@ -11,6 +11,7 @@ public class Goods extends Product implements Sellable {
 	
 	public Goods(String name, double purchasePrice, LocalDate purchaseDate, int stockedAmount, double sellPrice, String unit) {
 		super(name, purchasePrice, purchaseDate, stockedAmount);
+		
 		this.sellPrice = sellPrice;
 		this.unit = unit;
 	}
@@ -40,5 +41,11 @@ public class Goods extends Product implements Sellable {
 	@Override
 	public String toString() {
 		return "Goods [sellPrice=" + this.sellPrice + ", unit=" + this.unit + ", " + super.toString() + "]";
+	}
+
+
+	@Override
+	public int price() {
+		return 100;
 	}
 }
