@@ -1,9 +1,9 @@
 package com.bilgeadam.lesson011;
 
 public class Person {
-	int age;
-	double salary;
-	String name;
+	public int age;
+	public double salary;
+	public String name;
 	
 	
 	@Override

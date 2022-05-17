@@ -24,6 +24,11 @@ public class ArrayTest {
 		}
 
 //		System.out.println(players[6]);
+		System.out.println("===================");
+		int i = 1;
+		for (String player : players) {
+			System.out.println(i++  + ". oyuncunun adı: " + player);
+		}
 	}
 
 }
