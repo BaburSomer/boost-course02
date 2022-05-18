@@ -11,6 +11,7 @@ public class ArrayListExample {
 		arrayList.add("Armut");
 		arrayList.add(0, "Muz");
 		arrayList.add(2, "Çilek");
+		arrayList.add(2, "x");
 		for (Object object : arrayList) {
 			String str = (String)object;
 			System.out.println(str);

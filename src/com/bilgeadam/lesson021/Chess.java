@@ -12,7 +12,7 @@ public class Chess {
 	private int     colNum;
 	private int[][] chess;
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		Chess chessGame = new Chess();
 		chessGame.initChessBoard();
 		chessGame.readKnightsPosition();
@@ -20,7 +20,7 @@ public class Chess {
 		chessGame.printChessBoard();
 	}
 
-	private void printChessBoard() {
+	private void printChessBoard() throws InterruptedException {
 		for (int row = 7; row >= 0; row--) { // en tepede a8 olduğu için satır numaraları üst sınırdan başlamalı
 			for (char column = 'a'; column <= 'h'; column++) {
 				if (chess[row][column - 'a'] == Chess.EMPTY_CELL) { // a'nın ASCİİ değeri 97. Array herzaman 0'dan
@@ -30,10 +30,11 @@ public class Chess {
 				}
 				else {
 					if (chess[row][column - 'a'] == Chess.KNIGHTS_POSITION)
-						System.out.print(" AT ");
+						System.out.print(" 🐴 ");
 					else
-						System.out.print(" XX ");
+						System.err.print(" ✨ ");
 				}
+				Thread.sleep(50);
 			}
 			System.out.println();
 		}
