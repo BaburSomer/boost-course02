@@ -25,7 +25,8 @@ public class EratosthenesSieve {
 		}
 
 		Stream<Integer> result = Arrays.asList(sieve).stream();
-		result.filter(x -> x >= 0).forEach(x -> System.out.println(x));
+		result.filter(x -> x >= 0)
+			  .forEach(System.out::println);
 	}
 
 }
