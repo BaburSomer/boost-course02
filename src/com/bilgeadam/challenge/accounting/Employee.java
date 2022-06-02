@@ -17,10 +17,7 @@ public class Employee implements Comparable<Employee> {
 	}
 	
 	public Employee(String firstName, String lastName, boolean hourlyBased, double earning) {
-		super();
-		this.id          = Employee.EMPLOYEE_NUMBER++;
-		this.firstName   = firstName.trim();
-		this.lastName    = lastName.trim();
+		this(firstName, lastName);
 		this.hourlyBased = hourlyBased;
 		this.earning     = earning;
 	}
